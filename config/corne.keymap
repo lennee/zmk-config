@@ -74,14 +74,14 @@
         layers {
                 // ---------------------------------------------------------------------------------------------
                 // |      |     |     |     |     |     | # |     |     |         |                |     |     |
-                // | HELD |     |     |     |     |     | # |     |     | COLEMAK | GAMING_COLEMAK |     |     |
-                // |      |     |     |     |     |     | # |     |     | QWERTY  | GAMING_QWERTY  |     |     |
+                // | HELD |     |     |     |     |     | # |     |     | COLEMAK | GAMING_QWERTY  |     |     |
+                // |      |     |     |     |     |     | # |     |     |         |                |     |     |
                 //                    |     |     |     | # |     |     |         |
 
             bindings = <
         &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans       &trans              &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &to COLEMAK  &to GAMING_COLEMAK  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &to QWERTY   &to GAMING_QWERTY   &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &to COLEMAK  &to GAMING_QWERTY  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans   &trans   &trans  &trans
                                 &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
