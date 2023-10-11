@@ -73,14 +73,14 @@
 
         layers {
                 // ---------------------------------------------------------------------------------------------
-                // |      |     |     |     |     |     | # |     |     |         |                |     |     |
-                // | HELD |     |     |     |     |     | # |     |     | COLEMAK | GAMING_QWERTY  |     |     |
-                // |      |     |     |     |     |     | # |     |     |         |                |     |     |
-                //                    |     |     |     | # |     |     |         |
+                // |      |     |     |     |     |     | # |     | BT HOME |     BT WORK    |     |     |     |
+                // | HELD |     |     |     |     |     | # |     | COLEMAK | GAMING_QWERTY  |     |     |     |
+                // |      |     |     |     |     |     | # |     |         |                |     |     |     |
+                //                    |     |     |     | # |     |         |                |
 
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans       &trans              &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &to COLEMAK  &to GAMING_QWERTY  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans        &trans  &bt BT_SEL 0  &bt BT_SEL 1       &trans              &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans        &trans   &to COLEMAK  &to GAMING_QWERTY  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans   &trans   &trans  &trans
                                 &trans  &trans  &trans        &trans  &trans  &trans
             >;
