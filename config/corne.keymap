@@ -55,7 +55,7 @@
 
             bindings = <
 &kp GRAVE   &kp Q               &kp W       &kp F          &kp P          &kp B            &kp J          &kp L         &kp U        &kp Y         &kp SEMICOLON  &kp MINUS
-&mo LAYERS  &mt LGUI A          &mt LALT R  &mt LCTRL S    &kp T          &kp G            &kp M          &kp N         &mt LCTRL E  &mt LALT I    &mt LGUI O     &kp RSHFT
+&mo LAYERS  &mt LGUI A          &mt LALT R  &mt LCTRL S    &kp T          &kp G            &kp M          &kp N         &mt LCTRL E  &mt LALT I    &mt LGUI O     &kp SQT
 &kp LSHIFT  &mt LC(LS(LALT)) Z  &mt RALT X  &kp C          &kp D          &kp V            &kp K          &kp H         &kp COMMA    &mt RALT DOT  &kp FSLH       &kp RSHIFT
                                             &lt MEDIA ESC  &lt NAV SPACE  &lt MOUSE TAB    &lt SYM ENTER  &lt NUM BSPC  &lt FN DEL
             >;
