@@ -22,6 +22,7 @@
 #define NUM 6
 #define SYM 7
 #define FN 8
+#define GAMING_SUBLAYER 9
 
 // Behavior configuration
 
@@ -69,10 +70,10 @@
             //                          |  ESC  | SPACE |  TAB  | # | ENTER | BSPC  |  DEL  |
 
             bindings = <
-&kp ESC     &kp Q  &kp W  &kp E             &kp R      &kp T      &kp Y      &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&mo LAYERS  &kp A  &kp S  &kp D             &kp F      &kp G      &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C             &kp V      &kp B      &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                          &kp LEFT_CONTROL  &kp SPACE  &kp TAB    &kp ENTER  &kp BSPC  &kp DEL
+&kp LEFT_CONTROL  &kp Q  &kp W  &kp E                      &kp R      &kp T      &kp Y      &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&mo LAYERS        &kp A  &kp S  &kp D                      &kp F      &kp G      &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C                      &kp V      &kp B      &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                &lt GAMING_SUBLAYER LCTRL  &kp SPACE  &kp TAB    &kp ENTER  &kp BSPC  &kp DEL
             >;
         };
 
@@ -178,6 +179,15 @@
 &trans  &kp F11  &kp F4  &kp F5   &kp F6     &kp SLCK           &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
 &trans  &kp F10  &kp F1  &kp F2   &kp F3     &kp PAUSE_BREAK    &trans  &trans     &trans     &kp RALT  &trans    &trans
                          &kp ESC  &kp SPACE  &kp TAB            &trans  &trans     &trans
+            >;
+        };
+
+        gaming_sublayer {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans    &trans    &trans
+                        &trans  &trans  &trans    &trans  &trans     &trans
             >;
         };
     };
